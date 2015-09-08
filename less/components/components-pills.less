@@ -1,0 +1,31 @@
+/* PILLS
+-------------------------------------------------- */
+
+/*
+
+  SAMPLE MARKUP:
+  --------------------------------------------------
+  
+  see: http://getbootstrap.com/2.3.2/components.html#navs
+  
+*/
+
+/* GENERAL STYLES 
+- reset CLF styling */
+
+.nav-pills a {
+  color: @textColor;
+  background-color: @nursingLightGrey;
+  border-radius: 3px !important;
+  &:hover {
+    background-color: @nursingPurple !important;
+    color: white !important;
+  }
+}
+
+.nav-pills>.active>a, 
+.nav-pills>.active>a:hover, 
+.nav-pills>.active>a:focus {
+  background-color: @nursingDarkPurple;
+  color: white;
+}

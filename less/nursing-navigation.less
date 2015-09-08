@@ -1,0 +1,72 @@
+
+
+/* PRIMARY NAVIGATION
+-------------------------------------------------- */
+
+// OVERRIDE DEFAULT CLF STYLES
+#ubc7-unit-menu .nav>li.active>a, 
+#ubc7-unit-alternate-navigation .nav>li.active>a, 
+#ubc7-unit-menu .nav>li.active>.btn-group,
+#ubc7-unit-menu .nav>li>a.active, 
+#ubc7-unit-menu .nav>li.active-trail>.btn-group, 
+#ubc7-unit-alternate-navigation .nav>li.active-trail>.btn-group {
+  background: @nursingLightGrey;
+}
+
+// sidenav
+// add in some chevrons
+.bootstrap-sidenav>li>a {
+	position: relative;
+	padding-right: 30px;
+	&:after {
+		position: absolute;
+		display: block;
+		right: 0;
+		content: '\F054';
+		font-family: 'Fontawesome';
+		top: 0;
+		padding: 9px 10px;
+	}
+}
+
+
+// secondary sidenav
+li .bootstrap-sidenav {
+  box-shadow: none;
+  &>li>a:after {
+  	display: none;
+  }
+}
+
+li .bootstrap-sidenav>li>a {
+  padding-left: 22px;
+  font-size: 14px;
+  color: black;
+  background: @nursingLightestGrey;
+}
+// tertiary sidenav
+li li .bootstrap-sidenav>li>a {
+  padding-left: 38px;
+  background: darken(@nursingLightestGrey, 4%);
+}
+
+@media (min-width: @screen-md-min) {
+  // replace home text with home icon
+  #main-menu > .home a {
+    text-indent: -300%;
+    overflow: hidden;
+    width: 20px !important;
+    position: relative;
+    &:after {
+      position: absolute;
+      display: block;
+      height: 50px;
+      width: 45px;
+      content: '\F015';
+      font-family: 'Fontawesome';
+      top: 10px;
+      font-size: 1.5em;
+      text-indent: 0;
+    }
+  }
+}

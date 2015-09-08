@@ -17,8 +17,6 @@
 #}
 {% import _self as menus %}
 
-
-
 {#
 {{ kint() }}
 #}
@@ -38,22 +36,16 @@
       <ul class="dropdown-menu">
     {% endif %}
       {% for item in items %}
-        {#%
-          set classes = [
-            'menu-item--active-trail' ? 'active-trail',
-            'is-active' ? 'active',
-          ]
-        %#}
         {% if item.below %}
-        <li{{ item.attributes.removeClass('menu-item').addClass('dropdown').addClass(classes) }}>
+        <li{{ item.attributes.removeClass('menu-item').addClass('dropdown') }}>
           <div class="btn-group">
-            {{ link(item.title, item.url, item.attributes.addClass('btn').addClass(classes)) }}
+            {{ link(item.title, item.url, item.attributes.addClass('btn')) }}
             <button class="btn dropdown-toggle" data-toggle="dropdown"><span class="ubc7-arrow blue down-arrow"></span></button>
             {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
           </div>
         {% else %}
-        <li{{ item.attributes.removeClass('menu-item').addClass(classes) }}>
-          {{ link(item.title, item.url, item.attributes.addClass(classes)) }}
+        <li{{ item.attributes.removeClass('menu-item') }}>
+          {{ link(item.title, item.url, item.attributes) }}
         {% endif %}
         </li>
       {% endfor %}

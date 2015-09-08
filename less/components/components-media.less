@@ -1,0 +1,34 @@
+/* MEDIA OBJECT
+-------------------------------------------------- */
+
+/*
+
+  SAMPLE MARKUP:
+  --------------------------------------------------
+  
+  see: http://getbootstrap.com/2.3.2/components.html#media
+  
+  
+  VARIABLES:
+  --------------------------------------------------
+  @nursingLightestGrey - used for borders
+  @nursingPurple - used for image borders
+  
+*/
+
+/* GENERAL STYLES  */
+
+.media {
+  border-top: 1px solid @nursingLightestGrey;
+  padding: .75em 0;
+  &:first-child {
+    border-top: none;
+  }
+}
+
+.media img {
+  border-left: 4px solid @nursingPurple;
+}
+.media:hover img {
+  border-color: @nursingDarkPurple;
+}

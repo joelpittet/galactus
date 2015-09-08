@@ -1,0 +1,64 @@
+/* SUPPORTING CONTENT
+-------------------------------------------------- */
+
+/*
+
+  USAGE
+  --------------------------------------------------
+  
+  Intended to be used in an aside or sub-region of the page to provide additional supporting content (metadata, additional links, etc)
+  
+  
+
+  SAMPLE MARKUP:
+  --------------------------------------------------
+  
+  <section class="supporting">
+    <header>
+      <h3>Some Title</h3>
+    </header>
+    <div class="content">
+      etc...
+    </div>
+  </section>
+    
+    
+  
+  
+  
+  CUSTOM SUPPORTING CONTENT CLASSES:
+  --------------------------------------------------
+  
+  .supporting
+  
+  
+  VARIABLES USED:
+  --------------------------------------------------
+  
+  @nursingLightestGrey - box background
+  @nursingLightGrey - box background hover
+  @nursingPurple - box border / readmore link
+  @nursingDarkPurple - box border hover / readmore link hover
+  
+*/
+
+
+.supporting {
+  margin: 2em 0;
+  font-size:  (@baseFontSize - 2);
+  header {
+    border-bottom: 2px solid @nursingLightGrey;
+    margin-bottom: .5em;
+    h3 {
+      color: @nursingPurple;
+      margin-bottom: 0;
+      font-weight: 500;
+      font-size: 1.5em;
+      line-height: 1.125em;
+    }
+  }
+  .content {
+    margin: 0;
+    padding: 0 .5em;
+  }
+}

@@ -1,0 +1,17 @@
+uuid: fcd78293-5698-4bb7-b02a-42c78e369394
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Slideshow Slide'
+type: slideshow_slide
+description: 'A single slide that can be added to a slideshow.'
+help: 'This field is not displayed with the slide and is for admin use only.'
+new_revision: false
+preview_mode: 1
+display_submitted: false

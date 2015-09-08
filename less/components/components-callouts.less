@@ -1,0 +1,40 @@
+/* CALLOUTS
+-------------------------------------------------- */
+
+/*
+
+  SAMPLE MARKUP:
+  --------------------------------------------------
+  
+  <div class="callout">
+  	<div class="callout-inner">
+  		<p>Callout box contents here.</p>
+  	</div>
+  </div>
+  
+  
+*/
+
+/* GENERAL STYLES 
+
+
+*/
+
+.callout {
+	margin: 1.5em;
+	padding: 1em;
+  	//background-color: @nursingLightGrey;
+  	border-bottom: 3px solid @nursingLightGrey;
+  	border-top: 3px solid @nursingLightGrey; 
+}
+.callout-inner >*:last-child {
+	margin-bottom: 0;
+}
+
+@media (min-width: 600px) {
+	.callout {
+	 	float: right;
+	 	margin: 0 0 1em 1em;
+	   	max-width: 40%;
+ 	}
+}

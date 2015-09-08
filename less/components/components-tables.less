@@ -1,0 +1,81 @@
+/* TABLES
+-------------------------------------------------- */
+
+/*
+  
+  Extends the Bootstrap 3 table styles to add responsive behaviours
+  
+  SAMPLE MARKUP:
+  --------------------------------------------------
+  
+  see: http://getbootstrap.com/2.3.2/base-css.html#tables
+  
+  
+  VARIABLES:
+  --------------------------------------------------
+
+  
+*/
+
+
+table {
+  caption {
+    color: @ubcBlue;
+    text-align: left;
+  }
+}
+
+.honors-distinctions table,
+.results table,
+.policies table,
+.opportunities table,
+.tablish {
+  font-size: 0.875em;
+}
+
+.results td {
+  width: 23%;
+  &:last-child {
+    width: 7%;
+  }
+}
+
+.results table a {
+  display: block;
+}
+
+.honors-distinctions td {
+  width: 30%;
+  &:last-child {
+    width: 70%;
+  }
+}
+
+.policies td {
+  width: 40%;
+}
+
+.policies td,
+.opportunities td {
+  &:last-child {
+    width: 20%;
+    text-align: center;
+    a {
+      margin-top: -4px;
+      margin-bottom: -3px;
+    }
+  }
+}
+
+.opportunities {
+  thead {
+    .light;
+    color: @nursingDarkGrey;
+  }
+  td:first-child {
+    width: 30%;
+  }
+  strong {
+    display: block;
+  }
+}

@@ -1,0 +1,1 @@
+!function($,t){"use strict";t.behaviors.galactusForms={attach:function(t){$("input[type=checkbox], input[type=radio]").checkbox()}}}(jQuery,Drupal);

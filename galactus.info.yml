@@ -11,6 +11,10 @@ libraries:
   
 ckeditor_stylesheets:
   - css/ckeditor-iframe.css
+  
+# Remove a CSS file - now requires full path (or @themename for a theme) to prevent assets with same namespace both being removed. See: https://www.drupal.org/node/2473869:
+stylesheets-remove:
+  - core/modules/system/css/system.theme.css
 
 regions:
   header: Header

@@ -1,0 +1,17 @@
+uuid: b9e6a073-7662-466e-b451-8111240b98bf
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Slideshow
+type: slideshow
+description: 'Add a series of slides to create a slideshow. Then, add the Block with the same name as the slideshow to your page via the Blocks interface.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

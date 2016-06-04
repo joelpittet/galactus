@@ -10,8 +10,8 @@ global-styling:
       css/layout.css: {}
       # css/style.css: {}
       # css/unit-custom.css: {} will include when anonymized and less files pruned
-      css/formstone/checkbox.css: {}
-      css/formstone/dropdown.css: {}
+      # css/formstone/checkbox.css: {}
+      # css/formstone/dropdown.css: {}
       css/colors.css: {}
       css/print.css: { media: print }
   js:
@@ -32,6 +32,14 @@ color.preview:
     color/preview.js: {}
   dependencies:
     - color/drupal.color
+
+
+# jQuery RequestAnimationFrame plugin - allows jQuery to run animations more smoothly
+# https://github.com/gnarf37/jquery-requestAnimationFrame
+jquery-requestAnimationFrame:
+  version: VERSION
+  js:
+    js/lib/requestAnimationFrame/jquery.requestAnimationFrame.min.js: {}
 
 
 # jQuery Migrate plugin - adds APIs and features removed in jQuery 1.9 back in

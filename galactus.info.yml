@@ -29,7 +29,7 @@ regions:
   content: Content
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar second'
-  triptych_first: 'Triptych first'
-  triptych_middle: 'Triptych middle'
-  triptych_last: 'Triptych last'
+  # triptych_first: 'Triptych first'
+  # triptych_middle: 'Triptych middle'
+  # triptych_last: 'Triptych last'
   footer: Footer

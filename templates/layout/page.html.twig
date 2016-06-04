@@ -50,9 +50,9 @@
  * - page.content: The main content of the current page.
  * - page.sidebar_first: Items for the first sidebar.
  * - page.sidebar_second: Items for the second sidebar.
- * - page.triptych_first: Items for the triptych first region.
- * - page.triptych_middle: Items for the triptych middle region.
- * - page.triptych_last: Items for the triptych last region.
+ * - page.triptych_first: Items for the triptych first region. [disabled]
+ * - page.triptych_middle: Items for the triptych middle region. [disabled]
+ * - page.triptych_last: Items for the triptych last region. [disabled]
  * - page.footer: Items for the footer region.
  * - page.breadcrumb: Items for the breadcrumb region.
  *
@@ -188,11 +188,11 @@
     </div>
   </nav>
   <!-- End of UBC Unit Navigation -->
-  <!-- UBC Unit Breadcrumbs -->
   {% if layout_option == 'full' or 'fluid' %}
   <div class="full-width-container">
   {% endif %}
   {% if page.breadcrumb %}
+  <!-- UBC Unit Breadcrumbs -->
     <div class="container crumbs">
     {{ page.breadcrumb }}
     </div> <!-- /.breadcrumb -->
@@ -254,7 +254,7 @@
     </div>
     {% endif %}
 </div><!-- /#main -->
-  {% if page.triptych_first or page.triptych_middle or page.triptych_last %}
+  {# % if page.triptych_first or page.triptych_middle or page.triptych_last %}
   <div id="triptych-wrapper">
     <aside id="triptych" class="clearfix" role="complementary">
       {{ page.triptych_first }}
@@ -262,7 +262,7 @@
       {{ page.triptych_last }}
     </aside>
   </div><!-- /#triptych, /#triptych-wrapper -->
-  {% endif %}
+  {% endif % #}
   <!-- End of Content Area -->
   {% if layout_option == 'full' or 'fluid' %}
   </div> <!-- /container -->
